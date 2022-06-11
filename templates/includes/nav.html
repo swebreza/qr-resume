@@ -1,0 +1,28 @@
+ <!-- NavBar -->
+ <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button"
+    style="height:80px;background-color:#37434d;color:#ffffff;">
+    <div class="container-fluid"><a class="navbar-brand" href="{% url 'index' %}"><i class="fa fa-globe"></i>&nbsp;QR
+          Resume</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span
+             class="visually-hidden">Toggle
+             navigation</span><span class="navbar-toggler-icon"></span></button>
+       <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="navbar-nav ms-auto">
+             <li class="nav-item">
+                <a class="nav-link " style="color:#ffffff;" href="{% url 'index' %}">
+                   <i class="fa fa-home"></i>&nbsp;Home</a></li>
+             <li class="nav-item">
+                <a class="nav-link " style="color:#ffffff;" href="{% url 'form' %}"><i class="fa fa-wpexplorer">
+                   </i>&nbsp;Form
+                </a>
+             </li>
+             <li class="nav-item"><a href="{% url 'dashboard' %}" class="nav-link " style="color:#ffffff;"><i
+                      class="fa fa-star-o"></i>&nbsp;Dashboard</a></li>
+             <li class="nav-item"><a class="nav-link " style="color:#ffffff;" href="#"><i
+                      class="fa fa-user-circle-o"></i>&nbsp;API</a></li>
+             <li class="nav-item"><a class="nav-link " style="color:#ffffff;" href="{% url 'login' %}"><i
+                      class="fa fa-sign-in"></i>&nbsp;Logout</a></li>
+          </ul>
+       </div>
+    </div>
+ </nav>
+ <!-- NavBar -->
