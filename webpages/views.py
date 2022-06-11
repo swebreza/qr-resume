@@ -4,11 +4,7 @@ from django.shortcuts import render
 def index(request):
  return render (request,'webpages/index.html')
 
-def signup(request):
- return render (request,'webpages/signup.html')
 
-def login(request):
- return render (request,'webpages/login.html')
 
 
 def dashboard(request):
