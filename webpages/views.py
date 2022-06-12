@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
+
+
 # Create your views here.
 
 def index(request):
@@ -7,8 +10,6 @@ def index(request):
 
 
 
-def dashboard(request):
- return render (request,'webpages/dashboard.html')
 
-def detailedView(request):
+def detailedView(request,id):
  return render (request,'webpages/detailedView.html')

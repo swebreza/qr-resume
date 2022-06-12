@@ -35,6 +35,7 @@ INSTALLED_APPS = [
 
     'webpages.apps.WebpagesConfig',
     'forms.apps.FormsConfig',
+    'pdfConverter.apps.PdfconverterConfig',
     'accounts.apps.AccountsConfig',
     'django.contrib.admin',
     'django.contrib.auth',

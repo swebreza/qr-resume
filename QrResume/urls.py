@@ -23,5 +23,6 @@ urlpatterns = [
     path('', include('webpages.urls')),
     path('forms/', include('forms.urls')),
     path('accounts/', include('accounts.urls')),
+    path('pdfConverter/', include('pdfConverter.urls')),
 ]
 # + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
