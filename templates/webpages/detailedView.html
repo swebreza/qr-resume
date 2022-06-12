@@ -1,18 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
-<br />
-<center>
- <h2>Details</h2>
-</center>
-<center>
- <table border="0" style="width: 80%;">
-  <tr style=" text-align: center;">
-   <td>1</td>{{form}}
-   <td>QR</td>
-  </tr>
-  <tr style=" text-align: center;">
-   <td style="padding-top: 33px;"><button class="col-6 btn btn-primary">Download</button></td>
-  </tr>
- </table>
-</center>
+<br><br><br>
+<table class="table">
+ <tr>
+  <td>
+   {% for list in form %}
+   <a href="{% url 'click'  list.id %}" class="btn btn-primary ">Load the Template</a>
+   {% endfor %}
+  </td>
+ </tr>
+ <tr>
+  <td><a href="{% url 'myview' %}" class="btn btn-primary ">Template 1 PDF</a> <a href="{% url 'myview'  %}"
+    class="btn btn-warning ">Template 2 PDF</a></td>
+ </tr>
+</table>
 {% endblock %}

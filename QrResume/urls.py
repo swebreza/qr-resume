@@ -24,5 +24,6 @@ urlpatterns = [
     path('forms/', include('forms.urls')),
     path('accounts/', include('accounts.urls')),
     path('pdfConverter/', include('pdfConverter.urls')),
+    path('qrGenerator/', include('qrGenerator.urls')),
 ]
 # + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
