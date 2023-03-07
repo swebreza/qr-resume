@@ -39,7 +39,7 @@ To run tests, run the following command
 
 ## Tech Stack
 
-**Client:** Html, CSS, JS
+**Client:** Html, CSS, JS, Bootstrap
 
 **Server:** Django, SQLITE3
 
